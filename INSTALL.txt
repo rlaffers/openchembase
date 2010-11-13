@@ -1,0 +1,47 @@
+﻿Package: OpenChemBase
+Author: Richard Laffers
+
+*** INSTALLATION ***
+
+1. Download & extract the OpenChemBase package.
+
+2. Install the SQL tables by importing `openchembase/install/install.sql` into your MySQL database.
+
+2. Edit `config.inc.php` and fill in your MySQL database credentials.
+
+	
+3.  
+Implement OpenChemBase in your pages. You've got two options:
+
+a) Use the included examples 
+
+	or
+
+b) include the inventory system within your web pages. Typically, you need to add:
+	
+		<link href='openchembase/theme/style.css' rel='stylesheet' type='text/css' />
+	
+	to the <head> section of your pages, and :
+		
+		<?php
+			require("openchembase/OpenChemBase.class.php");
+			$openchembase->display();  // this provides listing of all chemicals in the database
+		?>
+	
+	within the <body> section to display some output. You must stick with the same file names as shown in the examples.
+	
+
+*** List of methods available ***
+
+$openchembase->display();  // provides listing of all chemicals in the database
+$openchembase->add_chemical();  // add new chemical to the database
+$openchembase->delete_chemical();  // delete chemical from the database
+$openchembase->edit_chemical();  // edit chemical in the database
+$openchembase->view_chemical();  // view more details about selected chemical
+$openchembase->add_location();  // add new storage location to the database
+$openchembase->delete_location();  // delete storage location from the database
+$openchembase->edit_location();  // edit storage location in the database
+$openchembase->manage_locations();  // provides listing of all storage locations in the database
+$openchembase->view_location();  // view more details about selected storage location. Lists the chemicals stored in this location.
+$openchembase->print_chemicals();  // prints a printer-friendly listing of chemicals in the database
+$openchembase->search_chemical();  // search for chemicals

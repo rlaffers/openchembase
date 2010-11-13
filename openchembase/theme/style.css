@@ -1,0 +1,105 @@
+	/* Openchembase theme: Classic */
+	body {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 11px;
+		line-height:1.2;
+		color: #545454;
+		margin:1em 2em;;
+		padding:0;
+	}
+	img {
+		border:none;
+	}
+	a, a:visited {
+		color: #E6851C;
+		text-decoration:none;
+	}
+	a:hover, a:active, a:focus {
+		text-decoration:underline;
+	}
+    input[type=button], input[type=submit], input[type=reset] {
+		background-color:#FFFFFF;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+	input[type=text], select , textarea{
+		display:block;
+	}
+	#link-panel {
+	}
+	#count-panel {
+		font-weight:bold;
+	}
+	table#chemicals, table#locations {
+		width:100%;
+	}
+	table#chemicals th, table#locations th {
+		background-color:#EC9F37;
+		padding:2px 3px;
+		color:#FFFFFF;
+	}
+	table#chemicals td, table#locations td {
+		padding:0.2em 0.5em;
+	}
+	table#chemicals  a, table#locations  a {
+		color:#545454;
+	}
+	table#chemicals th a, table#locations th a {
+		color:#FFFFFF;
+	}
+	#chemicals tr, #locations tr {
+		background-color:#eaeaea;
+	}
+	tr.alternate {
+		background-color:#F6F6F6 !important;
+	}
+	.navigation-panel {
+		width:100%;
+		font-weight:bold;
+		height:1em;
+		clear:both;
+	}
+	a.previous {
+		float:left;
+	}
+	a.next {
+		float:right;
+	}
+
+	.date-panel {
+		font-weight:bold;
+		font-size:110%;
+	}	
+	.chemicals-for-print {
+		border:1px solid #000000;
+		width:1100px;
+	}
+	.chemicals-for-print th {
+		background-color: #CECECE;
+		text-align:left;
+	}
+	.lab-info {
+		white-space: pre-wrap;       /* css-3 */
+		white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+		white-space: -pre-wrap;      /* Opera 4-6 */
+		white-space: -o-pre-wrap;    /* Opera 7 */
+		word-wrap: break-word;       /* Internet Explorer 5.5+ */
+		border:1px solid #000000;
+		padding:3px 5px;
+		width:1090px;
+		font-size: 120%;
+	}
+	form#search-form {
+		margin:3px 0;
+	}
+	.emBlock {
+		background-color:#F6F6F6;
+		border:1px solid #e6e6e6;
+		padding:4px 8px;
+		text-align:justify;
+	}
+@media print {
+	body {
+		font-family: Georgia, Verdana, Arial, Helvetica, sans-serif;
+		font-size: 16pt;
+	}
+}
