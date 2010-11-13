@@ -7,7 +7,7 @@ Author: Richard Laffers
 
 2. Install the SQL tables by importing `openchembase/install/install.sql` into your MySQL database.
 
-2. Edit `config.inc.php` and fill in your MySQL database credentials.
+2. Rename `config.default.inc.php` to `config.inc.php` and fill in your MySQL database credentials.
 
 	
 3.  
