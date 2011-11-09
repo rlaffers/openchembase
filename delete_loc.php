@@ -9,7 +9,7 @@
 <p>Delete this location:</p>
 
 <?php  
-require("openchembase/OpenChemBase.class.php");
+require "openchembase/OpenChemBase.class.php";
 $openchembase->delete_location();
 ?>
 
