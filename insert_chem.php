@@ -9,7 +9,7 @@
 <p>Add chemical:</p>
 
 <?php  
-require("openchembase/OpenChemBase.class.php");
+require "openchembase/OpenChemBase.class.php";
 $openchembase->add_chemical();
 ?>
 
